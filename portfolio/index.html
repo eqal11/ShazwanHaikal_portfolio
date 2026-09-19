@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mohamad Shazwan Haikal | Geoinformatics Graduate | GIS & Web GIS Portfolio</title>
+<meta name="description" content="Portfolio of Mohamad Shazwan Haikal, a Geoinformatics graduate from Universiti Teknologi Malaysia with project experience in GIS, remote sensing, spatial analysis and Web GIS development.">
+<meta name="keywords" content="Geoinformatics, GIS, GIS Analyst, GIS Executive, Geospatial, Remote Sensing, Web GIS, Spatial Analysis, ArcGIS, QGIS, Leaflet.js, UTM, Malaysia">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="bg-grid"></div>
+
+<!-- ============ NAVIGATION ============ -->
+<header id="site-header">
+  <nav>
+    <a href="#home" class="logo">SH</a>
+    <ul class="nav-links" id="nav-links">
+      <li><a href="#home" data-nav>Home</a></li>
+      <li><a href="#about" data-nav>About</a></li>
+      <li><a href="#skills" data-nav>Skills</a></li>
+      <li><a href="#experience" data-nav>Experience</a></li>
+      <li><a href="#projects" data-nav>Projects</a></li>
+      <li><a href="#achievements" data-nav>Achievements</a></li>
+      <li><a href="#contact" data-nav>Contact</a></li>
+    </ul>
+    <div class="nav-cta">
+      <a href="#projects" class="btn btn-primary">View My Projects</a>
+      <button class="hamburger" id="hamburger" aria-label="Open menu"><span></span><span></span><span></span></button>
+    </div>
+  </nav>
+</header>
+<div class="overlay" id="overlay"></div>
+<div class="mobile-menu" id="mobile-menu">
+  <button class="mobile-close" id="mobile-close" aria-label="Close menu"><i class="fa-solid fa-xmark"></i></button>
+  <a href="#home">Home</a>
+  <a href="#about">About</a>
+  <a href="#skills">Skills</a>
+  <a href="#experience">Experience</a>
+  <a href="#projects">Projects</a>
+  <a href="#achievements">Achievements</a>
+  <a href="#contact">Contact</a>
+</div>
+
+<!-- ============ HERO ============ -->
+<section class="hero" id="home">
+  <div class="wrap hero-grid">
+    <div>
+      <div class="eyebrow">GIS • REMOTE SENSING • WEB GIS • SPATIAL ANALYSIS</div>
+      <h1>Geoinformatics graduate<br>building <span class="accent">insights from spatial data.</span></h1>
+      <p class="hero-sub">Fresh graduate in Geoinformatics with hands-on experience in GIS analysis, spatial data processing, remote sensing and Web GIS development through internship and academic projects.</p>
+      <div class="hero-ctas">
+        <a href="#projects" class="btn btn-primary">Explore Projects</a>
+		<a href="assets/cv/RESUME_MohamadShazwanHaikal.pdf" target="_blank" rel="noopener" class="btn btn-ghost">Download CV</a>      </div>
+      <div class="hero-link">
+        <span>Let's Connect</span>
+        <a href="http://www.linkedin.com/in/mohamad-shazwan-haikal-71a690334/" target="_blank" rel="noopener"><i class="fa-brands fa-linkedin"></i> LinkedIn</a>
+      </div>
+    </div>
+    <div class="hero-visual">
+      <div id="hero-map"></div>
+      <div class="map-fade"></div>
+      <div class="decorative-note">decorative map — not project locations</div>
+      <div class="floating-card fc-1"><i class="fa-solid fa-layer-group"></i> GIS Analysis</div>
+      <div class="floating-card fc-2"><i class="fa-solid fa-satellite"></i> Remote Sensing</div>
+      <div class="floating-card fc-3"><i class="fa-solid fa-globe"></i> Web GIS</div>
+      <div class="floating-card fc-4"><i class="fa-solid fa-database"></i> Spatial Data</div>
+      <div class="hero-coord" id="hero-coord">03° 45' N, 101° 20' E</div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ ABOUT ============ -->
+<section id="about">
+  <div class="wrap">
+    <div class="about-grid">
+      <div class="reveal">
+        <div class="eyebrow">ABOUT</div>
+        <h2 class="section-title" style="margin-bottom:24px;">Who I am</h2>
+        <div class="about-text">
+          <p>I am a Bachelor of Science in Geoinformatics (Honours) graduate from Universiti Teknologi Malaysia with a CGPA of 3.55.</p>
+          <p>My experience includes GIS analysis, spatial data processing, remote sensing, GIS digitization, QA/QC, spatial modelling and Web GIS development.</p>
+          <p>I gained practical industry exposure during my GIS internship at Lat Connect 60 AI in Damansara Heights, Kuala Lumpur.</p>
+          <p>I am currently seeking opportunities where I can apply my geospatial knowledge while continuing to develop my technical skills.</p>
+        </div>
+      </div>
+      <div class="profile-card reveal">
+        <h3>Mohamad Shazwan Haikal bin Sartunis</h3>
+        <div class="profile-role">Geoinformatics Graduate</div>
+        <div class="profile-row"><span>University</span><span>UTM</span></div>
+        <div class="profile-row"><span>CGPA</span><span>3.55</span></div>
+        <div class="profile-row"><span>Location</span><span>Selangor, Malaysia</span></div>
+        <div class="profile-row"><span>Status</span><span>Seeking GIS roles</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ STATS ============ -->
+<section class="stats" style="padding-top:0; padding-bottom:0;">
+  <div class="stats-grid">
+    <div class="stat reveal">
+      <div class="stat-num" data-count="1">0</div>
+      <div class="stat-label">GIS Internship</div>
+      <div class="stat-sub">Industry experience</div>
+    </div>
+    <div class="stat reveal">
+      <div class="stat-num"><span data-count="5">0</span>+</div>
+      <div class="stat-label">Major GIS / Web GIS Projects</div>
+    </div>
+    <div class="stat reveal">
+      <div class="stat-num"><span data-count="3">0</span>+</div>
+      <div class="stat-label">GIS / Remote Sensing Domains</div>
+    </div>
+    <div class="stat reveal">
+      <div class="stat-num" data-count="3.55" data-decimal="true">0.00</div>
+      <div class="stat-label">CGPA</div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ SKILLS ============ -->
+<section id="skills">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <div class="eyebrow">SKILLS</div>
+      <h2 class="section-title">Technical toolkit</h2>
+      <p class="section-lead">Tools and methods I've applied across GIS, remote sensing and Web GIS coursework and internship work.</p>
+    </div>
+    <div class="skills-grid">
+      <div class="skill-cat reveal"><h4><i class="fa-solid fa-map"></i>GIS &amp; Geospatial</h4>
+        <div class="skill-tags"><span class="tag">ArcGIS Pro</span><span class="tag">ArcMap</span><span class="tag">QGIS</span><span class="tag">SuperMap</span><span class="tag">Google Earth Engine</span></div></div>
+      <div class="skill-cat reveal"><h4><i class="fa-solid fa-diagram-project"></i>Spatial Analysis</h4>
+        <div class="skill-tags"><span class="tag">Suitability Analysis</span><span class="tag">MCDM</span><span class="tag">AHP</span><span class="tag">Buffer Analysis</span><span class="tag">Zonal Analysis</span><span class="tag">DEM Terrain Analysis</span><span class="tag">Network Analysis</span><span class="tag">Land Cover Classification</span><span class="tag">Shoreline Change</span></div></div>
+      <div class="skill-cat reveal"><h4><i class="fa-solid fa-satellite-dish"></i>Remote Sensing</h4>
+        <div class="skill-tags"><span class="tag">Satellite Imagery</span><span class="tag">NDVI</span><span class="tag">NDMI</span><span class="tag">NBR</span><span class="tag">Land Cover Classification</span></div></div>
+      <div class="skill-cat reveal"><h4><i class="fa-solid fa-gears"></i>GIS Automation</h4>
+        <div class="skill-tags"><span class="tag">ArcGIS ModelBuilder</span><span class="tag">Basic Python</span></div></div>
+      <div class="skill-cat reveal"><h4><i class="fa-solid fa-code"></i>Web GIS</h4>
+        <div class="skill-tags"><span class="tag">Leaflet.js</span><span class="tag">HTML</span><span class="tag">CSS</span><span class="tag">JavaScript</span><span class="tag">React.js</span><span class="tag">PHP</span><span class="tag">MySQL</span></div></div>
+      <div class="skill-cat reveal"><h4><i class="fa-solid fa-file-lines"></i>Geospatial Data</h4>
+        <div class="skill-tags"><span class="tag">Shapefile</span><span class="tag">GeoJSON</span><span class="tag">KML/KMZ</span><span class="tag">Vector Data</span><span class="tag">Raster Data</span></div></div>
+      <div class="skill-cat reveal"><h4><i class="fa-solid fa-toolbox"></i>Other Tools</h4>
+        <div class="skill-tags"><span class="tag">Excel</span><span class="tag">PowerPoint</span><span class="tag">Canva</span><span class="tag">Ocean Data View</span><span class="tag">FLUS</span></div></div>
+      <div class="skill-cat reveal"><h4><i class="fa-solid fa-robot"></i>AI &amp; Digital Tools</h4>
+        <div class="skill-tags"><span class="tag">Generative AI</span><span class="tag">Prompt Engineering</span><span class="tag">AI-Assisted Research</span><span class="tag">AI-Assisted Coding</span><span class="tag">AI Content Evaluation</span></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ EXPERIENCE ============ -->
+<section id="experience">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <div class="eyebrow">EXPERIENCE</div>
+      <h2 class="section-title">Industry experience</h2>
+    </div>
+    <div class="exp-card reveal">
+      <div class="exp-top">
+        <div>
+          <div class="exp-role">GIS Intern</div>
+          <div class="exp-company">Lat Connect 60 AI</div>
+        </div>
+        <div class="exp-meta">Damansara Heights, Kuala Lumpur<br>July 2025 – October 2025</div>
+      </div>
+      <ul class="exp-list">
+        <li>Executed GIS digitization and spatial data processing for agriculture-related applications.</li>
+        <li>Performed QA/QC procedures to maintain spatial data accuracy and consistency.</li>
+        <li>Collected, processed and analyzed geospatial data for fire detection analysis in Western Australia.</li>
+        <li>Developed and applied ArcGIS ModelBuilder workflows to automate geoprocessing tasks.</li>
+        <li>Processed satellite data and imagery for GIS, agriculture and remote sensing applications.</li>
+        <li>Applied remote sensing techniques and received training in above-ground biomass estimation.</li>
+        <li>Participated in geospatial and agriculture industry events including AgriMalaysia.</li>
+      </ul>
+      <div class="tool-row">
+        <span class="tag">ArcGIS Pro</span><span class="tag">ModelBuilder</span><span class="tag">Remote Sensing</span><span class="tag">Satellite Imagery</span><span class="tag">Spatial Data</span><span class="tag">QA/QC</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ PROJECTS ============ -->
+<section id="projects">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <div class="eyebrow">PROJECTS</div>
+      <h2 class="section-title">Project evidence</h2>
+      <p class="section-lead">Selected academic and internship-adjacent projects across GIS analysis, remote sensing and Web GIS development. Click any project to see the full evidence gallery.</p>
+    </div>
+    <div class="filter-bar reveal">
+      <div class="filter-tabs" id="filter-tabs">
+        <button class="filter-tab active" data-filter="all">All</button>
+        <button class="filter-tab" data-filter="gis">GIS</button>
+        <button class="filter-tab" data-filter="remote-sensing">Remote Sensing</button>
+        <button class="filter-tab" data-filter="web-gis">Web GIS</button>
+        <button class="filter-tab" data-filter="spatial-analysis">Spatial Analysis</button>
+        <button class="filter-tab" data-filter="academic">Academic Projects</button>
+      </div>
+      <div class="search-box">
+        <i class="fa-solid fa-magnifying-glass"></i>
+        <input type="text" id="project-search" placeholder="Search projects...">
+      </div>
+    </div>
+    <div class="projects-grid" id="projects-grid"></div>
+  </div>
+</section>
+
+<!-- Project detail modal -->
+<div class="modal-overlay" id="project-modal">
+  <div class="modal">
+    <button class="modal-close" id="modal-close" aria-label="Close"><i class="fa-solid fa-xmark"></i></button>
+    <div class="modal-hero" id="modal-hero"><i class="fa-solid fa-map-location-dot" style="font-size:48px; color:var(--text-faint);"></i></div>
+    <div class="modal-body">
+      <div class="modal-meta" id="modal-meta"></div>
+      <div class="modal-title" id="modal-title"></div>
+
+      <div class="modal-section"><h5>Overview</h5><p id="modal-overview"></p></div>
+      <div class="modal-section"><h5>Problem / Objective</h5><p id="modal-objective"></p></div>
+      <div class="modal-section"><h5>My Contribution</h5><p id="modal-contribution"></p></div>
+      <div class="modal-section"><h5>Tools &amp; Technologies</h5><div class="modal-tools" id="modal-tools"></div></div>
+      <div class="modal-section" id="modal-methodology-wrap"><h5>Methodology</h5><div class="methodology" id="modal-methodology"></div></div>
+      <div class="modal-section"><h5>Key Outputs</h5><p id="modal-outputs"></p></div>
+      <div class="modal-section"><h5>Project Evidence Gallery <span style="color:var(--text-faint); font-weight:400; text-transform:none;" id="gallery-count"></span></h5>
+        <div class="gallery-grid" id="modal-gallery"></div>
+      </div>
+      <div class="modal-section" id="modal-links-wrap" style="display:none;"><h5>Links</h5><div class="modal-tools" id="modal-links"></div></div>
+      <div class="modal-section"><h5>Lessons Learned</h5><p id="modal-lessons"></p></div>
+
+      <div class="modal-nav">
+        <button id="modal-prev"><i class="fa-solid fa-arrow-left"></i> Previous project</button>
+        <button id="modal-next">Next project <i class="fa-solid fa-arrow-right"></i></button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ============ ACHIEVEMENTS ============ -->
+<section id="achievements">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <div class="eyebrow">ACHIEVEMENTS</div>
+      <h2 class="section-title">Recognition</h2>
+    </div>
+    <div class="ach-grid">
+      <div class="ach-card reveal">
+        <div class="ach-icon"><i class="fa-solid fa-trophy"></i></div>
+        <div class="ach-title">First Place</div>
+        <div class="ach-sub">Grab GeoStars Competition</div>
+      </div>
+      <div class="ach-card reveal">
+        <div class="ach-icon"><i class="fa-solid fa-medal"></i></div>
+        <div class="ach-title">Third Place</div>
+        <div class="ach-sub">Non-Imaging Remote Sensing Project — "Wind Speed and Direction in Sarawak"</div>
+      </div>
+      <div class="ach-card reveal">
+        <div class="ach-icon"><i class="fa-solid fa-award"></i></div>
+        <div class="ach-title">Dean's List Award</div>
+        <div class="ach-sub">2025 &amp; 2026 — Bachelor of Science in Geoinformatics (Honours)</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CERTIFICATIONS ============ -->
+<section id="certifications">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <div class="eyebrow">CERTIFICATIONS &amp; TRAINING</div>
+      <h2 class="section-title">Certificates &amp; training</h2>
+      <p class="section-lead">Each card links to the actual certificate document.</p>
+    </div>
+    <div class="cert-filter reveal" id="cert-filter">
+      <button class="filter-tab active" data-cfilter="all">All</button>
+      <button class="filter-tab" data-cfilter="2026">2026</button>
+      <button class="filter-tab" data-cfilter="2025">2025</button>
+      <button class="filter-tab" data-cfilter="gis">GIS</button>
+      <button class="filter-tab" data-cfilter="web-gis">Web GIS</button>
+      <button class="filter-tab" data-cfilter="data">Data / Analytics</button>
+      <button class="filter-tab" data-cfilter="other">Other Training</button>
+    </div>
+    <div class="cert-grid" id="cert-grid"></div>
+  </div>
+</section>
+
+<!-- ============ RESUME ============ -->
+<section id="resume">
+  <div class="wrap">
+    <div class="resume-panel reveal">
+      <div class="cv-preview">
+        <i class="fa-solid fa-file-pdf"></i>
+        <span>Mohamad Shazwan Haikal — Curriculum Vitae</span>
+      </div>
+      <div>
+        <div class="eyebrow">RESUME</div>
+        <h3 class="section-title" style="font-size:26px; margin-bottom:12px;">Curriculum Vitae</h3>
+        <p style="color:var(--text-dim); max-width:480px;">View or download my latest CV for a detailed overview of my education, internship experience, technical skills and academic projects.</p>
+        <div class="resume-actions">
+		<a href="assets/cv/RESUME_MohamadShazwanHaikal.pdf" target="_blank" rel="noopener" class="btn btn-primary">View CV</a>          
+		<a href="assets/cv/RESUME_MohamadShazwanHaikal.pdf" download class="btn btn-ghost">Download CV</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CONTACT ============ -->
+<section id="contact">
+  <div class="wrap">
+    <div class="contact-grid">
+      <div class="reveal">
+        <div class="eyebrow">CONTACT</div>
+        <h2 class="section-title">Let's build something with spatial data.</h2>
+        <p class="section-lead">I am currently seeking opportunities in GIS, geospatial analysis, remote sensing, Web GIS and related fields.</p>
+        <div class="contact-cards">
+          <a class="contact-card" href="mailto:haikals2002@gmail.com"><i class="fa-solid fa-envelope"></i><div><div class="cc-label">EMAIL</div><div class="cc-value">haikals2002@gmail.com</div></div></a>
+          <a class="contact-card" href="tel:+60174578913"><i class="fa-solid fa-phone"></i><div><div class="cc-label">PHONE</div><div class="cc-value">+60 17-457 8913</div></div></a>
+          <div class="contact-card"><i class="fa-solid fa-location-dot"></i><div><div class="cc-label">LOCATION</div><div class="cc-value">Hulu Bernam, Selangor</div></div></div>
+          <a class="contact-card" href="http://www.linkedin.com/in/mohamad-shazwan-haikal-71a690334/" target="_blank" rel="noopener"><i class="fa-brands fa-linkedin"></i><div><div class="cc-label">LINKEDIN</div><div class="cc-value">Mohamad Shazwan Haikal</div></div></a>
+        </div>
+        <div class="open-badge"><span class="dot"></span> Open to GIS &amp; Geospatial Opportunities</div>
+      </div>
+      <form class="reveal" id="contact-form">
+        <div class="form-group"><label for="cf-name">Name</label><input type="text" id="cf-name" required></div>
+        <div class="form-group"><label for="cf-email">Email</label><input type="email" id="cf-email" required></div>
+        <div class="form-group"><label for="cf-msg">Message</label><textarea id="cf-msg" required></textarea></div>
+        <button type="submit" class="btn btn-primary" style="width:100%; justify-content:center;">Send Message</button>
+        <p class="form-note">This form has no backend — submitting opens your email client via mailto with the message pre-filled.</p>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FOOTER ============ -->
+<footer>
+  <div class="wrap">
+    <div class="footer-grid">
+      <div>
+        <div class="footer-name">Mohamad Shazwan Haikal bin Sartunis</div>
+        <div class="footer-tag">Geoinformatics Graduate — GIS • Remote Sensing • Web GIS</div>
+      </div>
+      <div class="footer-links">
+        <a href="http://www.linkedin.com/in/mohamad-shazwan-haikal-71a690334/" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+        <a href="mailto:haikals2002@gmail.com" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
+        <a href="tel:+60174578913" aria-label="Phone"><i class="fa-solid fa-phone"></i></a>
+      </div>
+    </div>
+    <div class="footer-copy">© 2026 Mohamad Shazwan Haikal</div>
+  </div>
+</footer>
+
+<button id="backtotop" aria-label="Back to top"><i class="fa-solid fa-arrow-up"></i></button>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
