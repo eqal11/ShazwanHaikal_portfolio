@@ -37,7 +37,7 @@ const PROJECTS = [
     methodology: ["Spatial database design in MySQL", "Leaflet.js map integration with OpenStreetMap base layers", "Station search and filter logic", "Geolocation and nearest-station calculation", "Routing to selected station"],
     outputs: ["Interactive map of 108 EV charging stations", "Search and filter interface", "Nearest station and routing feature"],
     learned: "Connecting a spatial database to a Leaflet front end, and handling geolocation-based interactions on a live map.",
-    links: {},
+    links: { "Go to Site": "https://eqal11.github.io/EV-Charger-Dashboard/" },
     gallery: [
       { label: "Main Dashboard", caption: "Overview of the EV charging station dashboard.", src: "assets/projects/ev-charging/main_dashboard.png" },
       { label: "Interactive Map", caption: "Leaflet-based map of 108 charging stations.", src: "assets/projects/ev-charging/interactive_map.png" },
@@ -206,12 +206,18 @@ function renderProjects(list){
         <div class="pc-title">${p.title}</div>
         <div class="pc-desc">${p.description}</div>
         <div class="pc-tools">${p.tools.map(t=>`<span>${t}</span>`).join('')}</div>
-        <div class="pc-view">View Project <i class="fa-solid fa-arrow-right"></i></div>
+        <div class="pc-actions">
+          <div class="pc-view">View Project <i class="fa-solid fa-arrow-right"></i></div>
+          ${p.links && p.links['Go to Site'] ? `<a class="pc-site" href="${p.links['Go to Site']}" target="_blank" rel="noopener noreferrer">Go to Site <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i></a>` : ''}
+        </div>
       </div>
     </div>
   `).join('');
   grid.querySelectorAll('.project-card').forEach(card => {
-    card.addEventListener('click', () => openModal(card.dataset.id));
+    card.addEventListener('click', (event) => {
+      if(event.target.closest('a')) return;
+      openModal(card.dataset.id);
+    });
   });
 }
 renderProjects(PROJECTS);
@@ -276,7 +282,7 @@ function fillModal(p){
   const linkEntries = Object.entries(p.links || {});
   if(linkEntries.length){
     linksWrap.style.display = 'block';
-    document.getElementById('modal-links').innerHTML = linkEntries.map(([label,href])=>`<a href="${href}" class="btn btn-ghost" style="padding:8px 14px; font-size:13px;">${label}</a>`).join('');
+    document.getElementById('modal-links').innerHTML = linkEntries.map(([label,href])=>`<a href="${href}" class="btn btn-ghost" target="_blank" rel="noopener noreferrer" style="padding:8px 14px; font-size:13px;">${label}</a>`).join('');
   } else { linksWrap.style.display = 'none'; }
   document.querySelectorAll('.gallery-item').forEach(item => item.addEventListener('click', ()=>openLightbox(p, parseInt(item.dataset.idx))));
 }
